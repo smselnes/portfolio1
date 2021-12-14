@@ -2,16 +2,22 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "jaf-lapture", serif;
+  src: url("https://use.typekit.net/dsy4yxt.css");
+}
+
 body {
   background-color: ivory;
   margin: 0;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
+
 h1,
 h2,
 h3 {
-  font-family: "Times New Roman", Times, serif;
+  font-family: "jaf-lapture", serif;
 }
 header {
   display: flex;
@@ -81,6 +87,10 @@ a {
   background-color: #219026;
   color: #dcdbdb;
 }
+.cross-course:hover,
+.crosscourse-link:hover {
+  background-color: #0a3641;
+}
 
 .semester-project,
 .semesterproject-link {
@@ -88,14 +98,24 @@ a {
   color: #29637d;
 }
 
+.semester-project:hover,
+.semesterproject-link:hover {
+  background-color: #29637d;
+  color: #f4c18e;
+}
+
 .project-exam,
 .projectexam-link {
   background-color: #b1e0e7;
   color: black;
 }
-/* .cross-course,
-.semester-project,
-.project-exam*/
+
+.project-exam:hover,
+.projectexam-link:hover {
+  background-color: #7fffd4;
+  color: black;
+}
+
 a {
   display: flex;
   align-items: center;
@@ -130,9 +150,11 @@ a:hover {
     max-width: 100%;
     justify-content: space-evenly;
   }
+
   .content {
     align-items: center;
   }
+
   .frontpage-content a {
     margin: 5% 0%;
   }
@@ -143,13 +165,16 @@ a:hover {
     width: 280px;
     height: 280px;
   }
+
   a:hover {
     width: 320px;
     height: 320px;
   }
+
   h2 {
     font-size: 2.2em;
   }
+
   .board {
     width: 20%;
   }
