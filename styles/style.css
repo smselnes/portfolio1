@@ -2,11 +2,6 @@
   box-sizing: border-box;
 }
 
-@font-face {
-  font-family: "jaf-lapture", serif;
-  src: url("https://use.typekit.net/dsy4yxt.css");
-}
-
 body {
   background-color: ivory;
   margin: 0;
@@ -67,6 +62,9 @@ a {
   margin: 1% auto;
 }
 
+a:hover {
+  transition: 0.7s;
+}
 .frontpage-content,
 .content {
   text-align: center;
@@ -117,23 +115,12 @@ a {
   align-items: center;
 }
 
-a:hover {
-  width: 180px;
-  height: 180px;
-  transition: 1.2s ease;
-}
-
 /* Media Queries */
 
 @media (min-width: 500px) {
   a {
     height: 220px;
     width: 220px;
-  }
-
-  a:hover {
-    width: 260px;
-    height: 260px;
   }
 }
 
@@ -157,11 +144,6 @@ a:hover {
   a {
     width: 280px;
     height: 280px;
-  }
-
-  a:hover {
-    width: 320px;
-    height: 320px;
   }
 
   a h2 {
