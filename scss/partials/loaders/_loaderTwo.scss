@@ -1,0 +1,47 @@
+.loader__two {
+  margin: auto;
+}
+
+.loader__two--outer {
+  width: 6rem;
+  height: 6rem;
+  border: 10px double var(--one);
+  border-top: 10px double white;
+  position: absolute;
+  margin: auto;
+  border-radius: 50%;
+  animation: rotate 2s infinite linear;
+}
+
+.loader__two--inner {
+  width: 4rem;
+  height: 4rem;
+  border: 7px double var(--one);
+  border-top: 7px double white;
+  border-radius: 50%;
+  position: relative;
+  top: 15px;
+  left: 15px;
+  animation: rotateWrong 2s infinite linear;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotateWrong {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

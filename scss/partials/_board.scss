@@ -1,0 +1,30 @@
+.table-of-changes {
+  display: flex;
+  flex-wrap: wrap;
+
+  & .board {
+    background-color: burlywood;
+    padding: 2%;
+    margin: 1% auto;
+    width: 275px;
+
+    & p {
+      color: black;
+    }
+
+    @media (min-width: 1029px) {
+      width: 20%;
+    }
+
+    .stickynote {
+      background-color: lightyellow;
+      max-width: 50%;
+      height: auto;
+      display: block;
+      margin: auto;
+      padding: 2px;
+      transform: rotate(1deg);
+      box-shadow: 2px 2px 2px 0px black;
+    }
+  }
+}

@@ -1,0 +1,49 @@
+.loader__one {
+  display: flex;
+}
+
+.loader__one--ballOne,
+.loader__one--ballTwo,
+.loader__one--ballThree,
+.loader__one--ballFour {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100%;
+  margin: 0.8rem;
+  animation: bouncing 1.5s 0.5s linear infinite;
+}
+.loader__one--ballOne {
+  background-color: var(--one);
+  animation-delay: 0.1s;
+}
+
+.loader__one--ballTwo {
+  background-color: var(--two);
+  animation-delay: 0.3s;
+}
+
+.loader__one--ballThree {
+  background-color: var(--three);
+  animation-delay: 0.5s;
+}
+
+.loader__one--ballFour {
+  background-color: var(--four);
+  animation-delay: 0.7s;
+}
+
+@keyframes bouncing {
+  0%,
+  100% {
+    transform: scale(0.6);
+  }
+  25% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.4);
+  }
+  75% {
+    transform: scale(1);
+  }
+}

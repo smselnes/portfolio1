@@ -1,0 +1,25 @@
+.loader__three {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  color: var(--two);
+  height: 100%;
+  margin: auto;
+  font-family: Helvetica, sans-serif, Arial;
+  animation: hide 2s infinite 0s ease-in-out;
+  animation-direction: alternate;
+  text-shadow: 0 0 1px white;
+
+  & span {
+    margin-top: 3rem;
+  }
+}
+
+@keyframes hide {
+  0% {
+    letter-spacing: 5px;
+  }
+  100% {
+  }
+}

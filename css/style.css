@@ -1,0 +1,432 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  --one: rgb(181, 125, 72);
+  --two: #75512f;
+  --three: #f5a962;
+  --four: #362515;
+  --five: #db9758;
+}
+
+body {
+  background-color: ivory;
+  margin: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+.content {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+}
+
+@media (min-width: 768px) {
+  .content {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.content p {
+  margin: 1%;
+}
+
+.frontpage-content {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+  .frontpage-content {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .frontpage-content a {
+    margin: 1rem auto;
+  }
+}
+
+a {
+  text-decoration: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  -webkit-box-shadow: 2px 2px 2px 0px black;
+          box-shadow: 2px 2px 2px 0px black;
+  margin: 1% auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 500px) {
+  a a {
+    height: 220px;
+    width: 220px;
+  }
+}
+
+@media (min-width: 1029px) {
+  a {
+    width: 250px;
+    height: 250px;
+  }
+  a h2 {
+    font-size: 2rem;
+  }
+}
+
+a:hover {
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.loaders {
+  background-color: #a62d2d;
+  color: #faebd7;
+}
+
+.loaders:hover {
+  background-color: #faebd7;
+  color: #a62d2d;
+}
+
+.loaders__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "jaf-lapture", serif;
+}
+
+#heading,
+.navigation {
+  text-align: center;
+  background-color: cornsilk;
+  padding: 1%;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.project-exam,
+.projectexam-link {
+  background-color: #b1e0e7;
+  color: black;
+}
+
+.project-exam:hover,
+.projectexam-link:hover {
+  background-color: #7fffd4;
+  color: black;
+}
+
+.semester-project,
+.semesterproject-link {
+  background-color: #f4c18e;
+  color: #29637d;
+}
+
+.semester-project:hover,
+.semesterproject-link:hover {
+  background-color: #29637d;
+  color: #f4c18e;
+}
+
+.table-of-changes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.table-of-changes .board {
+  background-color: burlywood;
+  padding: 2%;
+  margin: 1% auto;
+  width: 275px;
+}
+
+.table-of-changes .board p {
+  color: black;
+}
+
+@media (min-width: 1029px) {
+  .table-of-changes .board {
+    width: 20%;
+  }
+}
+
+.table-of-changes .board .stickynote {
+  background-color: lightyellow;
+  max-width: 50%;
+  height: auto;
+  display: block;
+  margin: auto;
+  padding: 2px;
+  -webkit-transform: rotate(1deg);
+          transform: rotate(1deg);
+  -webkit-box-shadow: 2px 2px 2px 0px black;
+          box-shadow: 2px 2px 2px 0px black;
+}
+
+.cross-course,
+.crosscourse-link {
+  background-color: #219026;
+  color: #dcdbdb;
+}
+
+.cross-course:hover,
+.crosscourse-link:hover {
+  background-color: #0a3641;
+}
+
+.semesterproject2 {
+  background-color: #0a587f;
+  color: #f0f1f2;
+}
+
+.semesterproject2:hover {
+  background-color: #f0f1f2;
+  color: #0a587f;
+}
+
+.loader__one {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.loader__one--ballOne,
+.loader__one--ballTwo,
+.loader__one--ballThree,
+.loader__one--ballFour {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 100%;
+  margin: 0.8rem;
+  -webkit-animation: bouncing 1.5s 0.5s linear infinite;
+          animation: bouncing 1.5s 0.5s linear infinite;
+}
+
+.loader__one--ballOne {
+  background-color: var(--one);
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+
+.loader__one--ballTwo {
+  background-color: var(--two);
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+
+.loader__one--ballThree {
+  background-color: var(--three);
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.loader__one--ballFour {
+  background-color: var(--four);
+  -webkit-animation-delay: 0.7s;
+          animation-delay: 0.7s;
+}
+
+@-webkit-keyframes bouncing {
+  0%,
+  100% {
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+  }
+  25% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+  75% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes bouncing {
+  0%,
+  100% {
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+  }
+  25% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+  75% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+.loader__two {
+  margin: auto;
+}
+
+.loader__two--outer {
+  width: 6rem;
+  height: 6rem;
+  border: 10px double var(--one);
+  border-top: 10px double white;
+  position: absolute;
+  margin: auto;
+  border-radius: 50%;
+  -webkit-animation: rotate 2s infinite linear;
+          animation: rotate 2s infinite linear;
+}
+
+.loader__two--inner {
+  width: 4rem;
+  height: 4rem;
+  border: 7px double var(--one);
+  border-top: 7px double white;
+  border-radius: 50%;
+  position: relative;
+  top: 15px;
+  left: 15px;
+  -webkit-animation: rotateWrong 2s infinite linear;
+          animation: rotateWrong 2s infinite linear;
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes rotateWrong {
+  0% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+@keyframes rotateWrong {
+  0% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+}
+
+.loader__three {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: bold;
+  color: var(--two);
+  height: 100%;
+  margin: auto;
+  font-family: Helvetica, sans-serif, Arial;
+  -webkit-animation: hide 2s infinite 0s ease-in-out;
+          animation: hide 2s infinite 0s ease-in-out;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  text-shadow: 0 0 1px white;
+}
+
+.loader__three span {
+  margin-top: 3rem;
+}
+
+@-webkit-keyframes hide {
+  0% {
+    letter-spacing: 5px;
+  }
+  100% {
+  }
+}
+
+@keyframes hide {
+  0% {
+    letter-spacing: 5px;
+  }
+  100% {
+  }
+}
+/*# sourceMappingURL=style.css.map */

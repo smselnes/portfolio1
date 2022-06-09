@@ -1,0 +1,16 @@
+.loaders {
+  background-color: #a62d2d;
+  color: #faebd7;
+
+  &:hover {
+    background-color: #faebd7;
+    color: #a62d2d;
+  }
+}
+
+.loaders__container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
